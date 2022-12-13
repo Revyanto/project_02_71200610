@@ -19,7 +19,7 @@
     </header>
 
     <div class="chat box">
-      
+      <p>{{pesan}}</p>
     </div>
 
     <footer>
@@ -43,9 +43,9 @@
 </template>
 
 <script>
-import firebase from "./firebaseinit";
-import * as firestore from "firebase/firestore";
-const db = firestore.getFirestore(firebase);
+//import firebase from "./firebaseinit";
+//import * as firestore from "firebase/firestore";
+//const db = firestore.getFirestore(firebase);
 
 export default {
   data () {
@@ -56,11 +56,11 @@ export default {
         pesan:''
       }
   },
-  methods:{
-    simpanData(nama,pesan,tujuan){
-      firestore.addDoc(firestore.collection(db, "data"), {name: nama, message:pesan, sendto:tujuan});
-    }
-  }
+  //methods:{
+  //  simpanData(nama,pesan,tujuan){
+  //    firestore.addDoc(firestore.collection(db, "data"), {name: nama, message:pesan, sendto:tujuan});
+  //  },
+  //}
 }
 
 </script>
