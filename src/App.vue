@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="mystyle.css">
 <template>
    <div class="login" v-if="this.login === false">
       <div class="form-inner">
